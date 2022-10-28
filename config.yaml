@@ -1,0 +1,30 @@
+system:
+  db-type: pgsql
+  port: 8082
+zap:
+  level: info
+  format: console
+  prefix: bonus
+  director: log
+  show-line: true
+  encode-level: LowercaseColorLevelEncoder
+  stacktrace-key: stacktrace
+  log-in-console: true
+mysql:
+  host: "10.177.96.15"
+  port: "30306"
+  db-name: "gorm_demo"
+  username: "root"
+  password: "password"
+  config: "charset=utf8mb4&parseTime=True&loc=Local"
+  max-idle-conns: 10
+  max-open-conns: 100
+pgsql:
+  host: "localhost"
+  port: "5432"
+  db-name: "DB_BONUS_DEMO"
+  username: "postgres"
+  password: "6789@jkl"
+  config: ""
+  max-idle-conns: 10
+  max-open-conns: 100
